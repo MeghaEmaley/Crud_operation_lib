@@ -28,6 +28,10 @@ public class Author {
 			CascadeType.REMOVE }, mappedBy = "authors")
 	private Set<Book> books = new HashSet<Book>();
 
+	public Author( String name) {
+		
+		this.name = name;
+	}
 	
 	public Long getId() {
 		return id;
@@ -58,6 +62,7 @@ public class Author {
 		super();
 	}
 
+	
 	
 
 }

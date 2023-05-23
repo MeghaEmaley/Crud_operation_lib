@@ -9,10 +9,5 @@ import com.project.LibraryManagement.Entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 	User findByEmail(String email);
-
-	Object findByUsername(String username);
-
-	
-
 	
 }
